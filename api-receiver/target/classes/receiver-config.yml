@@ -1,0 +1,27 @@
+# 接收端配置（负责将请求转发给转发端）
+receiver:
+  enable: true # 是否启用，默认为 false，在 false 的情况下，下面的配置全部不生效
+  # userAgent: # 自定义请求头中的 User-Agent 字段
+  credentials:
+    id: 2vx9IJkiptCSjXib # 标识当前节点的id
+    security-key: Me37o6GB5QgE7uPH # 预共享密钥
+  api:
+    - name: test1 # 该 api 的分组名字
+      forwarder: http://127.0.0.1:9091 # 该分组下的 url 转发到哪个转发端
+      urls:
+        - url: /**
+          host: https://cn.bing.com/ # 该地址请求转发到的目标主机
+          url-encode: true # 是否需要 urlEncode，默认需要
+          method: # 可接受的请求方式
+            - GET
+            - POST
+#    - name: test2 # 该 api 的分组名字
+#      forwarder:  http://127.0.0.1:9091 # 该分组下的 url 转发到哪个转发端
+#      urls:
+#        - url: /test2/**
+#          prefix: /prefix # 前缀，请求的地址中该前缀不会参与转发
+#          host: https://cn.bing.com/ # 该地址请求转发到的目标主机
+#          url-encode: false # 是否需要 urlEncode，默认需要
+#          method: # 可接受的请求方式
+#            - GET
+#            - POST

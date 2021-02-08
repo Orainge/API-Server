@@ -1,0 +1,6 @@
+# 转发端配置（负责将接收转发请求并将请求结果返回给接收端）
+forwarder:
+  enable: true # 是否启用，默认为 false，在 false 的情况下，下面的配置全部不生效
+  whitelist: # 节点标识的白名单列表，只有在白名单的节点请求才接受
+    - id: 2vx9IJkiptCSjXib # 标识当前节点的id
+      security-key: Me37o6GB5QgE7uPH # 预共享密钥
