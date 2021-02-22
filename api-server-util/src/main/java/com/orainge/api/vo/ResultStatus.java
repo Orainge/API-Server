@@ -51,10 +51,6 @@ public enum ResultStatus {
         return code;
     }
 
-    public String getMessage() {
-        return message;
-    }
-
     public Result toResult() {
         return new Result().setCode(code).setMessage(message);
     }

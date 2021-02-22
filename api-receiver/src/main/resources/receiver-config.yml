@@ -11,7 +11,7 @@ receiver:
       urls:
         - url: /**
           host: https://cn.bing.com/ # 该地址请求转发到的目标主机
-          url-encode: true # 是否需要 urlEncode，默认需要
+          url-encode: false # 是否需要 urlEncode，默认需要
           method: # 可接受的请求方式
             - GET
             - POST

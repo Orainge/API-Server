@@ -19,7 +19,7 @@ import java.util.Map;
 import java.util.UUID;
 
 /**
- * 请求客户端
+ * REST 请求客户端
  *
  * @author Eason Huang
  * @date 2021/1/22
@@ -78,7 +78,6 @@ public class RestTemplateClient {
             String showUrl = url;
             HttpEntity<String> request;
             Map<String, Object> paramsKv = new HashMap<>();
-//            headers.setContentType(MediaType.APPLICATION_JSON);
 
             // 根据情况添加 header
             headers.addAll(headerMap);

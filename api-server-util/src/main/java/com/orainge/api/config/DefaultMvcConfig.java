@@ -16,7 +16,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 自定义的默认 MVC 转换器
+ * 自定义 MVC 转换器<br/>
+ * 在保留默认的 MVC 的转换器的基础上，设置 FastJson 为 JSON 数据的转换器 <br/>
+ * 可以通过继承该类实现自定义的操作
  */
 @Configuration
 @ConditionalOnMissingBean(DefaultMvcConfig.class)

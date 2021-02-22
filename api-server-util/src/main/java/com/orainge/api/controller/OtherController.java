@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * 其它路径的 Controller
+ * 其它路径的 Controller<br/>
+ * 可以通过继承该类实现自定义操作
  *
  * @author Eason Huang
  * @date 2021/1/23

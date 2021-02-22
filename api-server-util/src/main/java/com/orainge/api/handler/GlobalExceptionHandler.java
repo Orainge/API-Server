@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /**
- * 全局统一异常处理
+ * 全局统一异常处理<br/>
+ * 可以通过继承该类实现自定义操作
  *
  * @author Eason Huang
  * @date 2021/1/21

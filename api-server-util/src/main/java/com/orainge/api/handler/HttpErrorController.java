@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * /error 异常处理
+ * 复写 /error 的处理方式
  *
  * @author Eason Huang
  * @date 2021/1/21

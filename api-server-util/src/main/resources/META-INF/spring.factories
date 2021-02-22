@@ -8,4 +8,4 @@ com.orainge.api.config.RestTemplateConfig,\
 com.orainge.api.client.RestTemplateClient,\
 com.orainge.api.config.DefaultMvcConfig,\
 com.orainge.api.util.JSONUtil,\
-com.orainge.api.util.encryption.TOTPUtil
+com.orainge.api.util.encryption.impl.TOTPUtilImpl
